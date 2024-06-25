@@ -64,7 +64,7 @@ for ii = 1:length(best_comb_trap)
     pcolor(XX, YY, abs(p1))
     colormap hot
     shading interp
-    clim([0 2500])
+    caxis([0 2500])
     [x_peaks, y_peaks, peak_values] = findpeaks2D(abs(p1)', xx, yy, 5e-03);
     % Combine x, y, and f into a single matrix
     data = [x_peaks(:), y_peaks(:), peak_values(:)];
